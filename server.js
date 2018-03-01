@@ -13,11 +13,12 @@ const certDir = `/etc/letsencrypt/live/${domain}/`
 app.prepare()
   .then(() => {
     const server = express()
-    server.use(redirect)
+    !dev && server.use(redirect)
     server.get('*', (req, res) => {
       return handle(req, res)
     })
     http2({
+      dev,
       app: server,
       certDir,
     }).listen().then(() => {
