@@ -112,8 +112,6 @@ sudo certbot certonly
 # checkout
 git clone https://github.com/nextjs-boilerplate/next-express-certbot.git
 cd next-express-certbot
-npm install
-npm build
 
 # modify your domain and certDir
 vi server.js
@@ -121,6 +119,8 @@ vi server.js
 #const certDir = `/etc/letsencrypt/live/${domain}/`
 
 # start
+npm install
+npm build
 npm run start
 
 # renew certfication in crontab
