@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/nextjs-boilerplate/next-express-certbot#readme",
   "dependencies": {
-    "certbot-express": "^1.0.1",
+    "certbot-express": "^1.0.2",
     "express": "^4.16.2",
     "next": "^5.0.0",
     "react": "^16.2.0",
